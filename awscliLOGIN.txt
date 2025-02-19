@@ -1,0 +1,12 @@
+###Ensure that your AWS CLI is properly configured with the correct credentials. 
+###You can do this by running:
+CMD: aws configure
+###CHECK Environment Variables.
+echo %AWS_ACCESS_KEY_ID%
+echo %AWS_SECRET_ACCESS_KEY%
+aws s3 mb s3://pugal12345 --region us-east-2 --profile GIVE YOUR PROFILE NAME
+aws configure list-profiles
+aws s3 mb s3://pugal12345 --region us-east-2 --profile Vimal-Kumar
+
+
+
