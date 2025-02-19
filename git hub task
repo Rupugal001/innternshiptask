@@ -1,0 +1,18 @@
+cd "C:\Users\DB Tech\Desktop"
+git --version
+git init      ###before create a folder andput what you to push to git hub       
+git add .     ### after executing this i get warnings so i executed
+git config --global core.autocrlf true    ### for warnings 
+git  config user.email "pugalenthiru01@gmail.com"
+git config user.user.name "pugalenthi U"
+git commit -m "using of python program uploading on s3 bucket"
+
+%%% MADE MISTAKE TAHT TIME MY FILE PATH IS ON DESKTOP O ITS FETCH THE ALL FILES IN FOLDER SO I DONE DELETE %%%%%%%%
+
+git add -A  ### FOR MODIFIED AND DELETE 
+git commit -m "deleting the files "
+git push origin master # that time i get error orgin does not read
+
+
+%%%%i changed the file path created folder%%%%
+cd "C:\Users\DB Tech\Desktop\ctotaskfolder"    ###Double " " using for space in dB TECH
