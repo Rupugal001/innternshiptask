@@ -1,0 +1,20 @@
+%%%%% create instance using bash%%%%%%%%%
+aws configure --profile Vimal-Kumar
+
+to stop instance = aws ec2 stop-instances --instance-ids i-0e741f38bdc5f7109 --region us-east-2 --profile Vimal-Kumar
+to terminate instance = aws ec2 terminate-instances --instance-ids i-0e741f38bdc5f7109 --region us-east-2 --profile Vimal-Kumar
+
+aws ec2 run-instances \
+    --image-id ami-0c55b159cbfafe1f0 \
+    --count 1 \
+    --instance-type t2.micro \
+    --key-name MyKeyPair \
+    --security-group-ids sg-0123456789abcdef0 \
+    --subnet-id subnet-678f7e7f \
+    --region us-west-2
+
+
+
+security group:   sg-0247566d2faf6223c
+ami-0cb91c7de36eed2cb
+instance id i-0e741f38bdc5f7109
