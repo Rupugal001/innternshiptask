@@ -1,0 +1,39 @@
+###install nginx 
+sudo apt update
+sudo apt install nginx
+
+%%%%making it straightforward to allow Nginx access %%%%%%%%%%% ufw %%%%%%%
+
+sudo ufw app list
+
+
+###output:
+Available applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH ####
+
+
+  ###allowing http port 80#####
+
+  sudo ufw allow 'Nginx HTTP'
+
+  sudo ufw status
+
+ %%%%% Output
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere                  
+Nginx HTTP                 ALLOW       Anywhere                  
+OpenSSH (v6)               ALLOW       Anywhere (v6)             
+Nginx HTTP (v6)            ALLOW       Anywhere (v6) %%%%%%%%%
+
+%%%%%checking web server%%%%%%%
+systemctl status nginx
+
+curl -4 icanhazip.com  ####give public ip address another location######## 
+
+
